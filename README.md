@@ -47,11 +47,11 @@ The final version improves the task submission API with standard C++11 utilities
 
 ## Build
 
-Use a C++11-compatible compiler.
+Use a compiler with C++14 language support and C++11 threading library support.
 
 Example:
 
 ```bash
-g++ -std=c++11 basic/main.cpp basic/threadpool.cpp -pthread -o basic_threadpool
-g++ -std=c++11 final/main.cpp -pthread -o final_threadpool
+g++ -std=c++14 basic/main.cpp basic/threadpool.cpp -pthread -o basic_threadpool
+g++ -std=c++14 final/main.cpp -pthread -o final_threadpool
 ```
